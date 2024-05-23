@@ -1,4 +1,4 @@
-// Runtime 88ms Beats 82.77% of users with JavaScript
+// Runtime 77ms Beats 97.88% of users with JavaScript
 // Memory 57.72 MB Beats 84.71% of users with JavaScript
 
 /**
@@ -6,7 +6,7 @@
  * @return {number[][]}
  */
 var merge = function(intervals) {
-    const sIntervals = intervals.sort((a, b) => a[0] - b[0]);
+    intervals.sort((a, b) => a[0] - b[0]);
     const res = [intervals[0]];
 
     for(let i = 1; i < intervals.length; i++) {
